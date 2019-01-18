@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEBE9"
+    tools:context="com.example.android.whichflower.About">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/about_info"
+        android:layout_margin="16dp"
+        android:textStyle="italic"
+        android:textSize="16dp"
+        android:text="This app is uses deep learning model to predict the names of a flower present in the picture. The picture can be chosen from gallery or it can be taken at that moment. There are 102 different kinds of flowers that this model can predict.The names of those 102 flowers are given below. If the picture contains any flower that is not present in the given list, then it will tell name of the flower from the list that looks most identical to the one in the picture."
+        android:textColor="#8D6E63"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_info">
+    <Button
+        android:id="@+id/flowersList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp"
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+        android:text="List of Flowers" />
+    </RelativeLayout>
+</RelativeLayout>
