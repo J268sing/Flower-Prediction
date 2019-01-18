@@ -1,0 +1,7 @@
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule "index.html" "http://taurine:25566/" [P]
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule "^(.*)$" "http://taurine:25566/$1" [P]

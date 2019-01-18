@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Find Flower</title>
+	<style>
+	body{
+		background-color: #d9d9d9;
+	}
+
+	h1{
+		font-family: "Arial";
+		text-align: center;
+		color: #000000;
+	}
+
+	h2{	
+		text-align: center;
+		font-weight: normal;
+		font-family: "Arial";
+		color: #b22222;
+	}
+
+	h3{
+		font-family: "Arial";
+		color: #000000;
+	}
+
+	h1, h4 {
+     margin:0
+ }
+
+h3, h4 {
+     margin:20
+ }
+
+ form, h2 {
+     margin:0
+ }
+
+ form,h5{
+ 	margin: 0
+ }
+
+	h4{
+		font-weight: normal;
+		font-family: "Arial";
+		color: #000000;
+	}
+
+	h5{
+		margin-bottom: 100px;
+
+		text-align: center;
+		font-weight: normal;
+		font-family: "Arial";
+		color: #000000;
+	}
+
+
+	form { 
+		margin: 0 auto; 
+		width:250px;
+	}
+	</style>
+</head>
+<body>
+	
+	<h1>About</h1>
+	<h4>This Web app takes in a flower image and uses a deep learning model to predict name of the species of flower that is the nearest look-alike (neighbour) of flower present in the image, out of 102 flower species on which the the model has been trained on. </h4>
+	<h3>The model requires that the user must input an image that has flower in it. Otherwise, it will assume the presence of flower and will give the nearest look-alike. </h3>
+	<h2>Upload the Flower Image</h2>
+	<form method = "post" enctype= multipart/form-data>
+		<input type="file" name="file" >
+		<input type="submit" name="upload">
+	</form>
+	<h5>Only accepts .jpg or .jpeg files </h5>
+
+	<h4> Link to the list of flowers which can be classified: https://raw.githubusercontent.com/udacity/pytorch_challenge/master/cat_to_name.json 
+	</h4>
+</body>
+</html>
